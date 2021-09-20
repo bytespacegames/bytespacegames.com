@@ -271,21 +271,14 @@
   position: absolute;
   text-align: center;
   width: 20vw;
-  top: 190%;
+  top: 165%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 .bottomCorner {
   position: absolute;
-  top: 190%;
-  left: -89%;
-  transform: translate(-50%, 0%);
-}
-.bottomCornerUp {
-  position: absolute;
-  top: 179%;
-  left: -94.5%;
-  transform: translate(-50%, 0%);
+  top: 163%;
+  left: -79%;
 }
 .container .btn:hover {
   background-color: #666;

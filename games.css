@@ -258,7 +258,7 @@
 .container2 {
   position: relative;
   width: 50%;
-  top: -92px;
+  top: -128px;
   left: 51%;
 }
 .container2 img {
@@ -291,12 +291,11 @@
   font-size: 0.15in;
 }
 .textRe {
-  position: absolute;
+  position:fixed;
   text-align: center;
   width: 20vw;
-  top: 190%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  bottom:-390px;
+  left: 180px;
 }
 .container .btn:hover {
   background-color: #666;
