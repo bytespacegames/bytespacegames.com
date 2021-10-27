@@ -106,6 +106,7 @@
 }
 [class~="txt"] {
     top: 10%;
+	width: 80vw;
 }
 [class~="center"],
 [class~="txt"] {
@@ -234,9 +235,8 @@
 } 
 .container {
   position: relative;
-  width: 50%;
-  top: 120px;
-  left: 25%;
+  width: 22%;
+  top: 145px;
 }
 .container img {
   width: 100%;
@@ -256,29 +256,35 @@
   cursor: pointer;
 }
 .infoText {
+  position:absolute;
+  bottom:0;
+  right:40%;
   color: white;
   font-family: Tahoma;
   font-weight: normal;
   font-size: 0.15in;
+  width: 20vw;
 }
-.rollOverInfo {
+.infoHeader2 {
+  color: white;
+  font-family: Tahoma;
+  font-weight: normal;
+  font-size: 0.4in;
+  width: 10vw;
+}
+.infoHeaderBlue2 {
   color: blue;
   font-family: Tahoma;
   font-weight: normal;
-  font-size: 0.15in;
+  font-size: 0.4in;
+  width: 10vw;
 }
-.textRe {
-  position: absolute;
-  text-align: center;
-  width: 20vw;
-  top: 165%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.rollOverInfo {
+  color: blue;
 }
 .bottomCorner {
   position: absolute;
-  top: 163%;
-  left: -79%;
+  bottom: 1%;
 }
 .container .btn:hover {
   background-color: #666;
