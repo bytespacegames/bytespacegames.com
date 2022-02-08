@@ -256,9 +256,9 @@
   cursor: pointer;
 }
 .infoText {
-  position:relative;
+  position:absolute;
   bottom:0;
-  right:40%;
+  right:50%;
   color: white;
   font-family: Tahoma;
   font-weight: normal;
