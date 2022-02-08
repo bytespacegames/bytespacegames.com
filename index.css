@@ -283,7 +283,7 @@
   color: blue;
 }
 .bottomCorner {
-  position: absolute;
+  position: fixed;
   bottom: 1%;
 }
 .container .btn:hover {
@@ -291,9 +291,4 @@
 }
 body {
     background-color: #051321;
-}
-.botleft {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
 }
