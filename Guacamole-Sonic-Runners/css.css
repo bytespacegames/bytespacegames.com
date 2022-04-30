@@ -1,0 +1,28 @@
+body {
+  background-color: #00053a;
+  transition-duration: 5s;
+  color: white;
+  font-family:Tahoma;
+}
+.btn {
+  background-color: #E7E7E7;
+  transition:0.4s;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family:Tahoma;
+  display: inline-block;
+  font-size: 16px;
+}
+.btn:hover {
+  background-color: white;
+}
+img {
+  width:400px;
+  border-radius:0px;
+  border-style:solid;
+  border-width:4px;
+  border-color:white;
+}
