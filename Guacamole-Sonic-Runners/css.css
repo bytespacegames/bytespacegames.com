@@ -5,6 +5,7 @@ body {
   font-family:Tahoma;
 }
 .btn {
+  cursor: pointer;
   background-color: #E7E7E7;
   transition:0.4s;
   border: none;
@@ -15,7 +16,6 @@ body {
   font-family:Tahoma;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer;
 }
 .btn:hover {
   background-color: white;
