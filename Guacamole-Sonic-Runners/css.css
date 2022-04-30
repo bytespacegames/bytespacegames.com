@@ -1,10 +1,12 @@
 body {
   background-color: #00053a;
+  transition-duration: 5s;
   color: white;
   font-family:Tahoma;
 }
 .btn {
   background-color: #E7E7E7;
+  transition:0.4s;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -13,6 +15,7 @@ body {
   font-family:Tahoma;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: white;
