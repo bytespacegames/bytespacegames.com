@@ -5,7 +5,6 @@ body {
 }
 .btn {
   background-color: #E7E7E7;
-  transition:0.4s;
   border: none;
   color: black;
   padding: 15px 32px;
