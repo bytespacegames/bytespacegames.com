@@ -255,6 +255,54 @@
   border: none;
   cursor: pointer;
 }
+.containerl {
+  position: relative;
+  width: 22%;
+  top: 145px;
+  float: left;
+  left:27.5%
+}
+.containerl img {
+  width: 100%;
+  height: auto;
+}
+.containerl .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #9c9c9c;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+.containerr {
+  position: relative;
+  width: 22%;
+  top: 145px;
+  float: right;
+  right:27.5%;
+}
+.containerr img {
+  width: 100%;
+  height: auto;
+}
+.containerr .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #9c9c9c;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
 .infoText {
   position:fixed;
   bottom:0;
