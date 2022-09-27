@@ -85,8 +85,8 @@ body {
 
 iframe {
   /* Set the width of the iframe the size you want to transform it FROM */
-  width: 888px;
-  height: 500px;
+  width: 40%
+  height: 22.5%;
   /* apply the transform */
   -webkit-transform:scale(0.25);
   -moz-transform:scale(0.25);
