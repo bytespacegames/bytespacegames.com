@@ -38,6 +38,7 @@ body {
 }
 
 .linkbig:hover {
+	font-size:350%;
 	color:#00CCFF;
 }
 
@@ -80,6 +81,7 @@ body {
 }
 
 .link:hover {
+	font-size:200%;
 	color:#00CCFF;
 }
 
