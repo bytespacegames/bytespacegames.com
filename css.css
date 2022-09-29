@@ -42,6 +42,18 @@ body {
 	color:#00CCFF;
 }
 
+.infolink {
+	color:#ff0055;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	font-size:200%;
+}
+
+.infolink:hover {
+	font-size:230%;
+	color:#00CCFF;
+}
+
 #box {
 	background-color:#181818;
 	position:fixed;
