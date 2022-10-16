@@ -97,17 +97,6 @@ body {
 	color:#00CCFF;
 }
 
-iframe {
-  /* Set the width of the iframe the size you want to transform it FROM */
-  width: 100%;
-  height: 100%;
-  /* apply the transform */
-  -webkit-transform:scale(0.25);
-  -moz-transform:scale(0.25);
-  -o-transform:scale(0.25);
-  transform:scale(0.25);
-}
-
 @keyframes pulse {
   0% {
     color: #FFFFFF;
