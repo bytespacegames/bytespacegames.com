@@ -1,0 +1,3 @@
+Disallow: /clicktotenmodmanager
+Allow: /cttmm
+Allow: /click-to-ten-mod-manager
