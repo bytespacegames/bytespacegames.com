@@ -28,7 +28,9 @@ function setup() {
 function keyPressed(){
     keyPresses++;
     setCookie("presses",keyPresses);
-	setCookie(key,getCookie(key)+1);
+	var thiskey = getCookie(key)
+	thiskey++;
+	setCookie(key + "",thiskey);
 }
 
 function hovering(x,y,rwidth,rheight) {
