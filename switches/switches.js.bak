@@ -49,7 +49,7 @@ function draw() {
   noStroke();
   
   if (hovering(5,height - 15 - 5,50,15)) {
-    fill(135)    
+    fill(245)    
     if (mouseIsPressed && mouseButton === LEFT) {
       keyPresses=0;
       setCookie("presses",keyPresses);

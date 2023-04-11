@@ -8,7 +8,6 @@ function getCookie(cookieName) {
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i].trim();
     if ((c.indexOf(name)) == 0) {
-      alert("found");
       return c.substr(name.length);
     }
   }
