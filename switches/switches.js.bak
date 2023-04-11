@@ -15,6 +15,16 @@ function getCookie(cookieName) {
 return 0;
 }
 
+function deleteAllCookies() {
+	var cookies = document.cookie.split(";");
+
+	for (var i = 0; i < cookies.length; i++) {
+	var cookie = cookies[i];
+	var eqPos = cookie.indexOf("=");
+	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+	document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+}
+
 function setCookie(name, value) {
   document.cookie = name + "=" + (value || "") + "; path=/";
 }
@@ -52,8 +62,8 @@ function draw() {
   if (menu == 1) {
 	if (keyIsPressed) {
 		var stats = getCookie(key)
-		key = key.toUpperCase()
-		text("Presses of " + key + ": " + stats + ".", windowWidth/2, windowHeight/2);
+		var dispkey = key.toUpperCase()
+		text("Presses of " + dispkey + ": " + (stats + 0) + ".", windowWidth/2, windowHeight/2);
 	} else {
 	    text("Press any key to get it's stats.", windowWidth/2, windowHeight/2);
 	}
@@ -75,7 +85,7 @@ function draw() {
     fill(245)    
     if (mouseIsPressed && mouseButton === LEFT) {
       keyPresses=0;
-      document.cookie = "";
+      deleteAllCookies();
     }
   }
   rect(5,windowHeight - 15 - 5,50,15)

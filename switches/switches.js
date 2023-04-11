@@ -61,9 +61,9 @@ function draw() {
 	
   if (menu == 1) {
 	if (keyIsPressed) {
-		var stats = getCookie(key)
-		key = key.toUpperCase()
-		text("Presses of " + key + ": " + stats + ".", windowWidth/2, windowHeight/2);
+		var stats = getCookie(key + "")
+		var dispkey = key.toUpperCase()
+		text("Presses of " + dispkey + ": " + (stats + 0) + ".", windowWidth/2, windowHeight/2);
 	} else {
 	    text("Press any key to get it's stats.", windowWidth/2, windowHeight/2);
 	}
