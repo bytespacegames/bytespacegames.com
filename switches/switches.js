@@ -25,7 +25,7 @@ function deleteAllCookies() {
 		document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 	}
 }
-
+//GITHUB IS BEING STUPID AND NOT UPDATING WEBSITE SO IM PUSHING ANOTHER COMMIT WITH A MINOR CHANGE
 function setCookie(name, value) {
   document.cookie = name + "=" + (value || "") + "; path=/";
 }
