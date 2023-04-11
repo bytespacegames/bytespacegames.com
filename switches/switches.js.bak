@@ -57,7 +57,7 @@ function draw() {
 	}
 	
 	textAlign(LEFT,TOP)
-	if (hovering(windowWidth-15,10,20,20)) {
+	if (hovering(windowWidth-15,10,15,15)) {
       fill(245);
 	  if (mouseIsPressed && mouseButton === LEFT) {
 		menu = 0;
