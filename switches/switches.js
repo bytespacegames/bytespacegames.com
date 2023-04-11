@@ -28,6 +28,7 @@ function setup() {
 function keyPressed(){
     keyPresses++;
     setCookie("presses",keyPresses);
+	setCookie(key,getCookie("key"+1));
 }
 
 function hovering(x,y,rwidth,rheight) {
@@ -37,22 +38,55 @@ function hovering(x,y,rwidth,rheight) {
   return false;
 }
 
+var menu = 0;
+
 function draw() {
   resizeCanvas(window.innerWidth,window.innerHeight)
-	
   background(68);
   textAlign(CENTER,CENTER)
   fill(190)
-  text(keyPresses, windowWidth / 2, windowHeight / 2)
-  
   noStroke();
+	
+  if (menu == 1) {
+	if (keyIsPressed) {
+		var stats = getCookie(key)
+		key = key.toUpperCase()
+		text("Presses of " + key + ": " + stats + ".", windowWidth/2, windowHeight/2);
+	} else {
+	    text("Press any key to get it's stats.", windowWidth/2, windowHeight/2);
+	}
+	
+	textAlign(LEFT,TOP)
+	if (hovering(windowWidth-15,10,15,15)) {
+      fill(245);
+	  if (mouseIsPressed && mouseButton === LEFT) {
+		menu = 0;
+      }
+    }
+	text("X",windowWidth-15,10)
+	return;
+  }
+	
+  text(keyPresses, windowWidth / 2, windowHeight / 2)
   
   if (hovering(5,height - 15 - 5,50,15)) {
     fill(245)    
     if (mouseIsPressed && mouseButton === LEFT) {
       keyPresses=0;
-      setCookie("presses",keyPresses);
+      document.cookie = "";
     }
   }
   rect(5,windowHeight - 15 - 5,50,15)
+  
+  textAlign(LEFT,LEFT)
+  fill(190)
+  
+  if (hovering(windowWidth-20,windowHeight-20,20,20)) {
+    fill(245);
+	if (mouseIsPressed && mouseButton === LEFT) {
+		menu = 1;
+    }
+  }
+  
+  text("?",windowWidth - 15,windowHeight - 10);
 }
