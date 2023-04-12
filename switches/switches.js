@@ -17,10 +17,11 @@ return 0;
 
 //GITHUB IS BEING STUPID AND NOT UPDATING WEBSITE SO IM PUSHING ANOTHER COMMIT WITH A MINOR CHANGE
 function setCookie(name, value) {
-  for (var i = 0; i < cookies.length; i++) {
-		var cookie = cookies[i];
-		setCookie(cookie,0)
-	  }
+  var cookieValue = name + "=" + encodeURIComponent(value) + "; path=/";
+  if (!value) {
+    cookieValue += "; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  }
+  document.cookie = cookieValue;
 }
 
 var keyPresses = getCookie("presses")
