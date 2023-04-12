@@ -31,6 +31,10 @@ function setup() {
 }
 
 function keyPressed(){
+	if (menu == 1) {
+		return;
+	}
+	
     keyPresses++;
     setCookie("presses",keyPresses);
 	var thiskey = getCookie(key)
