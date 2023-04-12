@@ -85,8 +85,8 @@ function draw() {
   if (hovering(5,height - 15 - 5,50,15)) {
     fill(245)    
     if (mouseIsPressed && mouseButton === LEFT) {
-      keyPresses=0;
       deleteAllCookies();
+      window.location.reload();
     }
   }
   rect(5,windowHeight - 15 - 5,50,15)
