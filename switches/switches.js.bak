@@ -86,7 +86,7 @@ function draw() {
     fill(245)    
     if (mouseIsPressed && mouseButton === LEFT) {
       deleteAllCookies();
-      document.refresh();
+      window.location.reload();
     }
   }
   rect(5,windowHeight - 15 - 5,50,15)
