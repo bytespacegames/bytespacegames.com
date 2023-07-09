@@ -60,15 +60,6 @@
     
     .puppy-image {
       position: absolute;
-      animation: movePuppy 8s infinite linear;
-    }
-
-    @keyframes movePuppy {
-      0% { top: 0%; left: 0%; }
-      25% { top: calc(100% * var(--rand-y1)); left: calc(100% * var(--rand-x1)); }
-      50% { top: calc(100% * var(--rand-y2)); left: calc(100% * var(--rand-x2)); }
-      75% { top: calc(100% * var(--rand-y3)); left: calc(100% * var(--rand-x3)); }
-      100% { top: 0%; left: 0%; }
     }
   </style>
 </head>
@@ -90,5 +81,38 @@
   <img src="puppy.gif" class="puppy-image" alt="Moving Puppy Image">
   <img src="puppy.png" class="puppy-image" alt="Moving Puppy Image">
   <img src="puppy.jpg" class="puppy-image" alt="Moving Puppy Image">
+
+   <script>
+    // JavaScript to animate the puppy images
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const puppyImages = document.querySelectorAll('.puppy-image');
+      puppyImages.forEach((image) => {
+        animatePuppy(image);
+      });
+    });
+
+    function animatePuppy(image) {
+      const randomX = Math.floor(Math.random() * (window.innerWidth - image.width));
+      const randomY = Math.floor(Math.random() * (window.innerHeight - image.height));
+      
+      image.style.top = `${randomY}px`;
+      image.style.left = `${randomX}px`;
+
+      const animationDuration = 8; // Duration of the animation in seconds
+      const keyframes = [
+        { top: randomY + 'px', left: randomX + 'px' },
+        { top: randomY + 'px', left: randomX + 'px' },
+        { top: randomY + 'px', left: randomX + 'px' },
+        { top: randomY + 'px', left: randomX + 'px' },
+        { top: '0px', left: '0px' },
+      ];
+
+      image.animate(keyframes, {
+        duration: animationDuration * 1000,
+        iterations: Infinity,
+        easing: 'linear',
+      });
+    }
+  </script>
 </body>
 </html>
