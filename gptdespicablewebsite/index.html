@@ -8,6 +8,16 @@
       font-family: Comic Sans MS, cursive;
       color: #00ff00;
       animation: blink 1s infinite;
+      animation: flash 1s infinite;
+    }
+
+    @keyframes flash {
+      0% { background-color: #ff00ff; }
+      20% { background-color: #00ffff; }
+      40% { background-color: #ff00ff; }
+      60% { background-color: #00ffff; }
+      80% { background-color: #ff00ff; }
+      100% { background-color: #00ffff; }
     }
 
     @keyframes blink {
@@ -47,6 +57,19 @@
     .content {
       margin: 20px;
     }
+    
+    .puppy-image {
+      position: absolute;
+      animation: movePuppy 8s infinite linear;
+    }
+
+    @keyframes movePuppy {
+      0% { top: 0%; left: 0%; }
+      25% { top: calc(100% * var(--rand-y1)); left: calc(100% * var(--rand-x1)); }
+      50% { top: calc(100% * var(--rand-y2)); left: calc(100% * var(--rand-x2)); }
+      75% { top: calc(100% * var(--rand-y3)); left: calc(100% * var(--rand-x3)); }
+      100% { top: 0%; left: 0%; }
+    }
   </style>
 </head>
 <body>
@@ -63,5 +86,9 @@
     <p>puppies grow up to be big dogs someday. but even when they're big, they're still cute. they protect us and make us feel safe. they're our best friends.</p>
     <p>i hope u enjoyed learning about puppies. they're the bestest! bye bye now! 👋😄</p>
   </div>
+
+  <img src="puppy1.gif" class="puppy-image" alt="Moving Puppy Image">
+  <img src="puppy2.gif" class="puppy-image" alt="Moving Puppy Image">
+  <img src="puppy3.gif" class="puppy-image" alt="Moving Puppy Image">
 </body>
 </html>
