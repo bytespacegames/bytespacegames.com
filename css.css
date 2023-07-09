@@ -30,6 +30,18 @@ body {
 	margin-right:15px;
 }
 
+.linkmedium {
+	text-decoration: none;
+	color:white;
+	transition-duration: 0.4s;
+	font-size:150%;
+}
+
+.linkmedium:hover {
+	font-size:170%;
+	color:#00CCFF;
+}
+
 .linkbig {
 	text-decoration: none;
 	color:white;
