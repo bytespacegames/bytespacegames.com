@@ -16,4 +16,4 @@ REPORT HIM FOR IMPERSONATOR!!! I WANT MY IDENTITY BACK !~~@YY*#USHg8dfg
 "This guy legit stole the name, [they] had it first. [they have] it on almost every platform so [they] should get the username. Get the faker out of here!!! #FreeTheNameSpacebyte!!!!!!!!!!!!" - frid (10/7/2023, 7:33 PM EST)<br>
 “no” - fruits (10/7/2023 7:22 PM EST)<br>
 "spacebyte is cool, but spacebyte is not cool." - xdan (10/8/2023 10:06 AM EST)<br>
-"Twas brillig, and the slithy toves did gyre and gimble in the wabe. One man stole anothers name and must be put to his grave." - funl (10/8/2023 2:55PM EST)
+"Twas brillig, and the slithy toves did gyre and gimble in the wabe. One man stole anothers name and must be put to his grave." - funl, creator of the hit game "click to ten" (10/8/2023 2:55PM EST)
