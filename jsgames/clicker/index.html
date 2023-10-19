@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clicker</title>
+  <script src="p5.js"></script>
+  <script src="Clicker.js" ></script>
+  <script src="Menu.js" ></script>
+</head>
+<body>
+  <script>
+    var gameScript = document.createElement('script');
+    gameScript.src = 'Game.js';
+    document.head.appendChild(gameScript);
+	
+	gameScript.onLoad = function() {
+
+	}
+  </script>
+  <style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	canvas {
+		display: block;
+	}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <div id="container">
+	<div id="game">
+	</div>
+	<div id="menu">
+		<div id="topbar">
+			
+		</div>
+		<div id="tabs">
+
+		</div>
+		
+	</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body, h1, p {
+    margin: 1%;
+    padding: 0;
+	color:white;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+* {
+	font-family:'Roboto';
+	font-weight: 300;
+}
+body {
+	background-color: #242424;
+}
+
+.header {
+	font-size:200%;
+	display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.contentdisplay {
+	display:block;
+    width: calc(50% - 20px);
+    margin: 10px;
+	background:#ffffff;
+    position: relative;
+	padding-top: 40%;
+	z-index: 2763;
+	box-shadow:0px 0px 0px 0px magenta inset;
+	transition: box-shadow .2s ease-out;
+	background-size: cover;
+    background-position: center;
+}
+.contentdisplay:hover {
+	cursor: pointer;
+	box-shadow:0px 0px 0px 3px magenta inset;
+}
+
+.image {
+    width:100%;
+}
+
+#title {
+	display: inline-block;
+    white-space: nowrap;
+}
+
+#animatedText .purple-char {
+    color: purple;
+}
+
+@media (max-width: 600px) {
+    .contentdisplay {
+        flex: 100%;
+    }
+}
+
+.textcontent {
+	display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.fontkindabig {
+	font-size:18px;
+	line-height: 24px;
+}
+.fontnormal {
+	font-size:normal;
+}

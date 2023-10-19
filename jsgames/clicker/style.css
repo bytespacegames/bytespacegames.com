@@ -1,0 +1,37 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* make the container take up the full height of the viewport */
+}
+
+#game {
+  flex-grow: 1;
+  max-width: calc(100vw / 3.5);
+}
+
+#menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  border-left: 10px solid gray;
+}
+
+#tabs {
+  flex-grow: 1;
+  background-color: black;
+  color:white;
+  border-top: 10px solid gray;
+}
+
+#topbar {
+  flex-grow: 1;
+  padding: .5%;
+  max-height: calc(100vh / 12);
+  background-color: #5A5A5A;
+  color:white;
+}
+
+p {
+  margin: 0;
+}
