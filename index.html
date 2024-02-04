@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta name="description" content="my hub for everything programming!"/>
-  <title>bytespace - home</title>
+    <head>
+        <meta name="description" content="my hub for everything programming!"/>
+        <title>bytespace - home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css.css">
-  </head>
-  <body>
-		<!--#include file="navbar.html" -->
+        <link rel="stylesheet" href="css.css">
+
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("navbar").innerHTML = html;
+                });
+        });
+        </script>
+    </head>
+    <body>
+		<div id="navbar"></div>
 		<div id="box"><div id = "content">
 		<text class="title">home</text>
 		<br>
-		<br>
-		<br>
-		
-		<text class="info">bytespacegames is my personal hub for programming, modding, and game dev. take a look around!</text>
-		</div></div>
-  </body>
+	    <br>
+	    <br>
+	    <text class="info">bytespacegames is my personal hub for programming, modding, and game dev. take a look around!</text>
+        </div></div>
+    </body>
 </html>
