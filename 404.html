@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta name="description" content="404 not found"/>
-  <title>bytespace - 404</title>
+    <head>
+        <meta name="description" content="my hub for everything programming!"/>
+        <title>bytespace - home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css.css">
-  </head>
-  <body>
-		<div id="navbar">
-			<a href="index.html" class="link">Home</a>
-			<a href="downloads.html" class="link">Downloads</a>
-			<a href="https://discord.gg/RZYUQcp29g" class="link">Discord</a>
-			<a href="about.html" class="link">About</a>
-		</div>
-		<div id="box"><div id = "content">
-		<text class="title" style="font-size: 15vh;">404</text>
+        <link rel="stylesheet" href="css.css">
+
+	<script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
+                });
+            });
+        </script>
+    </head>
+    <body>
+	<div id="navbar"></div>
+	<div id="box">
+            <div id = "content">
+	        <text class="title" style="font-size: 15vh;">404</text>
 		<br>
-        <text class="info">0 bytes were here to be found...</text>
+        	<text class="info">0 bytes were here to be found...</text>
 		<br>
 		<br>
-		
-		
 		<br><br>
 		<div style="width: 100%;text-align: center;position: fixed;">
 			<a href="index.html" class="linkmedium">Go back home</a>
 		</div>
-		
-		</div></div>
-  </body>
+            </div>
+	</div>
+    </body>
 </html>
