@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta name="description" content="my hub for everything programming!"/>
-  <title>bytespace - downloads</title>
+    <head>
+        <meta name="description" content="my hub for everything programming!"/>
+        <title>bytespace - home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css.css">
-  </head>
-  <body>
-		<div id="navbar">
-			<a href="index.html" class="link">Home</a>
-			<a href="downloads.html" class="link">Downloads</a>
-			<a href="https://discord.gg/HzZ8WrmUea" class="link">Discord</a>
-			<a href="about.html" class="link">About</a>
-		</div>
-		<div id="box"><div id = "content">
-		<text class="title">downloads</text>
+        <link rel="stylesheet" href="css.css">
+
+	<script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
+                });
+            });
+        </script>
+    </head>
+    <body>
+	<div id="navbar"></div>
+	<div id="box">
+            <div id = "content">
+	        <text class="title">downloads</text>
 		<br>
 		<br>
 		<br>
-		
 		<text class="info">click to ten mod manager: </text> <a class = "infolink" href="http://adfoc.us/78148385759757">download</a><text class="info"> | </text> <a class = "infolink" href="cttmm.html">all</a>
 		<br>
 		<text class="info">OptiRenderer 1.8.9: </text> <a class = "infolink" href="http://adfoc.us/78148385734152">download</a><br><br>
 		<text class="info"></text> <a class="infolink" href="http://adfoc.us/78148386023470">click with the world (click to ten mod)</a>
-		</div></div>
-  </body>
+            </div>
+	</div>
+    </body>
 </html>
