@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta name="description" content="my hub for everything programming!"/>
-  <title>bytespace - downloads</title>
+    <head>
+        <meta name="description" content="my hub for everything programming!"/>
+        <title>bytespace - home</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css.css">
-  </head>
-  <body>
-		<div id="navbar">
-			<a href="index.html" class="link">Home</a>
-			<a href="downloads.html" class="link">Downloads</a>
-			<a href="https://discord.gg/HzZ8WrmUea" class="link">Discord</a>
-			<a href="about.html" class="link">About</a>
-		</div>
-		<div id="box"><div id = "content">
-		<text class="title">click to ten mod manager</text>
+        <link rel="stylesheet" href="css.css">
+
+	<script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
+                });
+            });
+        </script>
+    </head>
+    <body>
+	<div id="navbar"></div>
+	<div id="box">
+            <div id = "content">
+	        <text class="title">click to ten mod manager</text>
 		<br>
 		<br>
 		<br>
@@ -29,6 +35,7 @@
 		<a class = "infolink" href="http://adfoc.us/78148385451550">v1.1 </a> <text class="info">| </text>
 		<a class = "infolink" href="http://adfoc.us/7814831">v1.0</a><text class="info"> | </text> <br><br>
 		<a class = "infolink" href="downloads.html">back</a>
-		</div></div>
-  </body>
+            </div>
+	</div>
+    </body>
 </html>
