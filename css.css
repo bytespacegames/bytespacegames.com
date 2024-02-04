@@ -91,6 +91,12 @@ body {
     align-items: center;
 }
 
+#page {
+	position:fixed;
+	width:100%;
+	top:4.32%;
+}
+
 .blog {
   background-color: #202020;
   border: none;
