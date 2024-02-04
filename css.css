@@ -94,7 +94,9 @@ body {
 #page {
 	position:fixed;
 	width:100%;
-	top:4.32%;
+	top:1.5%;
+	left:-1%;
+	padding:.32%;
 }
 
 .blog {
