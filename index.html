@@ -9,20 +9,20 @@
         <link rel="stylesheet" href="css.css">
 
 	<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("navbar.html")
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById("navbar").innerHTML = html;
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(html => {
+        	    document.getElementById("navbar").innerHTML = html;
                 });
-        });
+            });
         </script>
     </head>
     <body>
-		<div id="navbar"></div>
-		<div id="box"><div id = "content">
-		<text class="title">home</text>
-		<br>
+	    <div id="navbar"></div>
+	    <div id="box"><div id = "content">
+	    <text class="title">home</text>
+	    <br>
 	    <br>
 	    <br>
 	    <text class="info">bytespacegames is my personal hub for programming, modding, and game dev. take a look around!</text>
