@@ -101,6 +101,7 @@ body {
 #policy {
     position:fixed;
     width:50%;
+    right:50%;
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 }
